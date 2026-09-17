@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Student Skill Tracker</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7fb;
+}
+
+header{
+background:#2563eb;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.container{
+width:90%;
+max-width:600px;
+margin:30px auto;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+h2{
+color:#2563eb;
+margin-bottom:20px;
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+textarea{
+height:120px;
+resize:none;
+}
+
+button{
+background:#2563eb;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin-top:10px;
+}
+
+button:hover{
+background:#1d4ed8;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Contact Us</h1>
+</header>
+
+<div class="container">
+
+<h2>Send a Message</h2>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea placeholder="Your Message"></textarea>
+
+<button onclick="sendMessage()">Send Message</button>
+
+<br><br>
+
+<button onclick="window.location.href='home.html'">Back to Home</button>
+
+</div>
+
+<script>
+function sendMessage(){
+alert("Message Sent Successfully!");
+}
+</script>
+
+</body>
+</html>

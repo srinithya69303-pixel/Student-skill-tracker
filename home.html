@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Student Skill Tracker</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#2563eb,#60a5fa);
+    min-height:100vh;
+}
+
+header{
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+}
+
+header h1{
+    font-size:35px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:20px auto;
+}
+
+.welcome-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.welcome-card h2{
+    color:#2563eb;
+}
+
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+button{
+    margin-top:25px;
+    padding:12px 22px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    font-size:16px
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+.navbar{
+    background:#1d4ed8;
+    padding:15px;
+    text-align:center;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.navbar a:hover{
+    text-decoration:underline;
+}
+
+@media(max-width:768px){
+
+.dashboard{
+grid-template-columns:1fr;
+}
+
+header h1{
+font-size:28px;
+}
+
+}
+footer{
+    background:#1d4ed8;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>Student Skill Tracker</h1>
+
+<p>Build Your Skills. Build Your Career.</p>
+
+</header>
+<nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="index.html">Skill Tracker</a>
+</nav>
+
+<div class="container">
+
+<div class="welcome-card">
+
+<h2>Welcome, <span id="userEmail"></span> 👋</h2>
+
+<p>Track your learning journey and improve your career skills.</p>
+
+<button onclick="openTracker()">Open Skill Tracker
+    <button
+     onclick="window.location.href='about.html'">
+    About Us
+</button>
+<button onclick="window.location.href='contact.html'">
+    Contact
+</button>
+
+</div>
+
+<div class="dashboard">
+
+<div class="card">
+<h3>💻 Skills</h3>
+<p>Manage your skills</p>
+</div>
+
+<div class="card">
+<h3>🏆 Certificates</h3>
+<p>Store achievements</p>
+</div>
+
+<div class="card">
+<h3>📁 Projects</h3>
+<p>Show your projects</p>
+</div>
+
+<div class="card">
+<h3>🎯 Career Goal</h3>
+<p>Become IT Ready</p>
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+document.getElementById("userEmail").innerText =
+localStorage.getItem("studentEmail");
+
+function openTracker(){
+window.location.href="index.html";
+}
+</script>
+
+<footer>
+    <p>© 2026 Student Skill Tracker |
+         Developed by Nithyasri</p>
+</footer>
+
+</body>
+</html>

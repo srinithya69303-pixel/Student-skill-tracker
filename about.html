@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Student Skill Tracker</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7fb;
+}
+
+header{
+background:#2563eb;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.container{
+width:90%;
+max-width:900px;
+margin:30px auto;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+margin-bottom:20px;
+}
+
+h2{
+color:#2563eb;
+margin-bottom:15px;
+}
+
+ul{
+padding-left:20px;
+}
+
+button{
+background:#2563eb;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1d4ed8;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>About Student Skill Tracker</h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Our Mission</h2>
+<p>
+Student Skill Tracker helps students record their skills,
+certifications, projects and achievements in one place.
+</p>
+</div>
+
+<div class="card">
+<h2>Features</h2>
+<ul>
+<li>Skill Tracking</li>
+<li>Progress Dashboard</li>
+<li>Certification Management</li>
+<li>Project Tracking</li>
+<li>Achievement Records</li>
+<li>Dark Mode</li>
+<li>Mobile Friendly</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Developer</h2>
+<p><strong>Nithyasri</strong></p>
+<p>BE Computer Science Engineering</p>
+<p>Madurai</p>
+</div>
+
+<div style="text-align:center;">
+<button onclick="goHome()">Back to Home</button>
+</div>
+
+</div>
+
+<script>
+function goHome(){
+window.location.href="home.html";
+}
+</script>
+
+</body>
+</html>
